@@ -22,7 +22,7 @@
           <p class="hero__description">ReadSmart makes it simple to access and manage your ebooks’ highlights and notes automatically.</p>
           <a href="#footer" class="button--new" onclick="gtag('event', 'click', {
             'event_category': 'suscription',
-            'event_label': 'Early access',
+            'event_label': 'interested on early access',
           });">Get early access</a>
         </div>
         <div class="column hero__image">
@@ -114,8 +114,7 @@
         if (validateEmail(document.querySelector('.email input').value)) {
           gtag('event', 'submit', {
             'event_category': 'suscription',
-            'event_label': 'contact info',
-            'value': document.querySelector('.email input').value
+            'event_label': document.querySelector('.email input').value,
           });
           document.querySelector('.email_success').style.display = 'block';
           document.querySelector('.email').style.display = 'none';
