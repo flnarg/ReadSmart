@@ -26,7 +26,7 @@
         <div class="column">
           <h1 class="hero__title">Access your learnings the <span class="highlight">smart way</span></h1>
           <p class="hero__description">ReadSmart makes it simple to access and manage your ebooks’ highlights and notes automatically.</p>
-          <a href="#footer" class="button--new" onclick="gtag('event', 'user', {
+          <a href="#footer" class="button--new" onclick="gtag('event', 'click', {
             'event_category': 'suscription',
             'event_label': 'Early access',
           });">Get early access</a>
@@ -118,7 +118,7 @@
       }
       document.querySelector('.button--new.buy').onclick = function() {
         if (validateEmail(document.querySelector('.email input').value)) {
-          gtag('event', 'user', {
+          gtag('event', 'submit', {
             'event_category': 'suscription',
             'event_label': 'contact info',
             'value': document.querySelector('.email input').value
