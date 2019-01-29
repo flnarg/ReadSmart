@@ -117,13 +117,42 @@ h2.section__title {
 .share {
   background-color: var(--bg-color);
   overflow: hidden;
-  text-align: center;
   padding: 0 0 70px 0
+}
+
+.share .content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .share p {
   max-width: 700px;
-  margin: 0 auto
+  margin: 0 auto;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+}
+
+.share h2 {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.share .column {
+  width: 70%;
+  float: left;
+}
+.share .column_img {
+  width: 20%;
+  margin: 0 10% 0 0;
+  float: left;
+}
+.share .column_img svg {
+  width: 100%;
+  padding: 10px;
 }
 
 /* buy */
