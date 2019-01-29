@@ -133,15 +133,24 @@ h2.section__title {
   letter-spacing: -0.1px;
   font-style: normal;
   font-weight: normal;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 10px 10px 9px 10px;
+  border-radius: 3px 0 0 3px;
   border: 1px solid #ccc;
   width: 300px;
+  outline: none;
+  margin: 10px 0 0 0;
 }
 
 .email .button--new {
   width: 100px;
-  margin: 0px
+  margin: -4px 0 0 0;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.email_success {
+  display: none;
 }
 
 /* footer */
