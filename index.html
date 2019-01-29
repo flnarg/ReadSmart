@@ -108,6 +108,7 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-133460526-1');
+      ga('send', 'event', 'user')
     </script>
     <script>
       function validateEmail(email) {
@@ -116,7 +117,7 @@
       }
       document.querySelector('.button--new.buy').onclick = function() {
         if (validateEmail(document.querySelector('.email input').value)) {
-          ga('send', 'event', 'user', 'singup', 'footerinput', document.querySelector('.email input').value);
+          ga('send', 'event', 'user', document.querySelector('.email input').value);
           document.querySelector('.email_success').style.display = 'block';
           document.querySelector('.email').style.display = 'none';
         } else {
