@@ -75,6 +75,10 @@ nav {
 }
 
 /* feature section */
+.how__it__works .section__title {
+  margin-bottom: 70px
+}
+
 h2.section__title {
   margin-top: 100px; 
   text-align: center;
@@ -93,6 +97,12 @@ h2.section__title {
 .feature__item img {
   width: 100%;
   padding: 30px
+}
+
+.feature__item svg {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
 }
 
 .feature__item .section__title {
