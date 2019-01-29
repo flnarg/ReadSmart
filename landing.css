@@ -166,6 +166,12 @@ h2.section__title {
 }
 
 @media (max-width: 750px) {
+  p, h1, h2, h3, h4 {
+    text-align: center !important;
+  }
+  .button--new {
+    float: none
+  }
   .hero__image {
     display: none;
   }
