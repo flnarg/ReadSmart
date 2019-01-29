@@ -26,7 +26,10 @@
         <div class="column">
           <h1 class="hero__title">Access your learnings the <span class="highlight">smart way</span></h1>
           <p class="hero__description">ReadSmart makes it simple to access and manage your ebooks’ highlights and notes automatically.</p>
-          <a href="#footer" class="button--new" onclick="ga('send', 'event', 'demo2', 'adsf')">Get early access</a>
+          <a href="#footer" class="button--new" onclick="gtag('event', 'user', {
+            'event_category': 'suscription',
+            'event_label': 'Early access',
+          });">Get early access</a>
         </div>
         <div class="column hero__image">
           <img src="media/hero.png">
@@ -115,7 +118,11 @@
       }
       document.querySelector('.button--new.buy').onclick = function() {
         if (validateEmail(document.querySelector('.email input').value)) {
-          ga('send', 'event', 'user', document.querySelector('.email input').value);
+          gtag('event', 'user', {
+            'event_category': 'suscription',
+            'event_label': 'contact info',
+            'value': document.querySelector('.email input').value
+          });
           document.querySelector('.email_success').style.display = 'block';
           document.querySelector('.email').style.display = 'none';
         } else {
