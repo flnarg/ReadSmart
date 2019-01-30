@@ -120,15 +120,21 @@ h2.section__title {
   padding: 0 0 70px 0
 }
 
+.share .section__title.why {
+  font-size: 2rem;
+  text-align: center; 
+}
+
 .share .content {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: left;
+  overflow: hidden;
 }
 
 .share p {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: left;
   font-size: 0.95rem;
   line-height: 1.3rem;
@@ -146,8 +152,8 @@ h2.section__title {
   float: left;
 }
 .share .column_img {
-  width: 20%;
-  margin: 0 10% 0 0;
+  width: 17%;
+  margin: 53px 10% 0 0;
   float: left;
 }
 .share .column_img svg {
@@ -218,25 +224,18 @@ h2.section__title {
     width: 100%;
     padding: 0 2%
   }
-  .hero__terminal {
-    width: 70%;
-  }
-  .tab__container > ul {
-    right: auto;
-    left: 0;
-    padding-left: 0;
-  }
-  .tab__container .code {
-    margin-top: 2rem;
-  }
-  .feature, .keybinding, .changelog__item {
-    flex-direction: column;
-  }
   .feature__item {
     max-width: 100%;
     margin: 0;
   }
-  .keybinding {
-    font-size: 0.8rem;
+  .share .column {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .share .column_img {
+    display: none;
+    width: 17%;
+    margin: 53px 10% 0 0;
+    float: left;
   }
 }
