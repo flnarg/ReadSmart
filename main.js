@@ -10,6 +10,7 @@ $(document).ready(function() {
   $form.submit(function(e){
     e.preventDefault(); 
     if (validateEmail(document.querySelector('.bottom-email input').value)) {
+      // Ref: https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175
       var formUrl = 'https://script.google.com/macros/s/AKfycbzxVJDPoE95M7UfOAocWyBI7rayJq53oqSZmky3YlmyOHwzxnjh/exec';
       var jqxhr = $.ajax({
         url: formUrl,
@@ -32,6 +33,7 @@ $(document).ready(function() {
   $form2.submit(function(e){
     e.preventDefault(); 
     if (validateEmail(document.querySelector('.top-email input').value)) {
+      // Ref: https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175
       var formUrl = 'https://script.google.com/macros/s/AKfycbzxVJDPoE95M7UfOAocWyBI7rayJq53oqSZmky3YlmyOHwzxnjh/exec';
       var jqxhr = $.ajax({
         url: formUrl,
