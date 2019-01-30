@@ -220,7 +220,7 @@ h2.section__title {
   p, h1, h2, h3, h4 {
     text-align: center !important;
   }
-  .button--new {
+  .button--new, .button--new:hover {
     float: none
   }
   .hero__image {
