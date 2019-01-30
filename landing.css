@@ -75,6 +75,10 @@ nav {
 }
 
 /* feature section */
+.how__it__works .section__title {
+  margin-bottom: 70px
+}
+
 h2.section__title {
   margin-top: 100px; 
   text-align: center;
@@ -95,6 +99,12 @@ h2.section__title {
   padding: 30px
 }
 
+.feature__item svg {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
 .feature__item .section__title {
   margin-bottom: 0;
 }
@@ -107,13 +117,47 @@ h2.section__title {
 .share {
   background-color: var(--bg-color);
   overflow: hidden;
-  text-align: center;
-  padding: 0 0 70px 0
+}
+
+.share .section__title.why {
+  font-size: 2rem;
+  text-align: center; 
+}
+
+.share .content {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: left;
+  overflow: hidden;
 }
 
 .share p {
   max-width: 700px;
-  margin: 0 auto
+  margin: 10px auto;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+}
+
+.share h2 {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.share .column {
+  width: 70%;
+  float: left;
+}
+.share .column_img {
+  width: 17%;
+  margin: 53px 10% 0 0;
+  float: left;
+}
+.share .column_img svg {
+  width: 100%;
+  padding: 10px;
 }
 
 /* buy */
@@ -121,19 +165,23 @@ h2.section__title {
   overflow: hidden;
   text-align: center;
 }
-
+.buy .section__title {
+  margin-bottom: 10px;
+}
 .buy p {
   max-width: 700px;
   margin: 0 auto
 }
-
+.email {
+  margin: 30px 0 0 0;
+}
 .email input {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.1px;
   font-style: normal;
   font-weight: normal;
-  padding: 10px 10px 9px 10px;
+  padding: 9px 10px 9px 10px;
   border-radius: 3px 0 0 3px;
   border: 1px solid #ccc;
   width: 300px;
@@ -142,7 +190,6 @@ h2.section__title {
 }
 
 .email .button--new {
-  width: 100px;
   margin: -4px 0 0 0;
   border-radius: 0 4px 4px 0;
   outline: none;
@@ -151,6 +198,7 @@ h2.section__title {
 
 .email_success {
   display: none;
+  margin: 30px 0 0 0
 }
 
 /* footer */
@@ -163,6 +211,9 @@ h2.section__title {
   text-align: center;
   margin: 100px 0 0 0;
   font-size: 13px
+}
+.footer .icons {
+  color: #C7C7C3;
 }
 
 @media (max-width: 750px) {
@@ -179,25 +230,24 @@ h2.section__title {
     width: 100%;
     padding: 0 2%
   }
-  .hero__terminal {
-    width: 70%;
-  }
-  .tab__container > ul {
-    right: auto;
-    left: 0;
-    padding-left: 0;
-  }
-  .tab__container .code {
-    margin-top: 2rem;
-  }
-  .feature, .keybinding, .changelog__item {
-    flex-direction: column;
-  }
   .feature__item {
     max-width: 100%;
     margin: 0;
   }
-  .keybinding {
-    font-size: 0.8rem;
+  .share .column {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .share .column_img {
+    display: none;
+    width: 17%;
+    margin: 53px 10% 0 0;
+    float: left;
+  }
+  .email .button--new {
+    width: auto;
+  }
+  .email input {
+    width: 215px;
   }
 }

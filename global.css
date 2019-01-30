@@ -9,7 +9,7 @@
   --light-gray-color: #C6CBD1;
   --medium-gray-color: #959DA5;
   --dark-gray-color: #444D56; 
-  --bg-color: #F6F2EF;
+  --bg-color: #f9f0e2;
   --code-bg-color: #F0E8E8;
 }
 
@@ -188,7 +188,6 @@ h3 {
   padding: 15px 25px;
   background-image: none;
   border: none;
-  border-bottom: 2px solid black;
   border-radius: 4px;
   margin: 0;
   -webkit-appearance: none;
@@ -197,7 +196,6 @@ h3 {
   display: inline-block;
   border: 0;
   color: white;
-  border-bottom: 2px solid black;
   background-color: #3CB371;
   border-bottom-color: #4a7e57;
   border-left: 1px solid #3CB371;
