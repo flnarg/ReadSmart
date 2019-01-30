@@ -75,12 +75,12 @@ h3 {
   position: relative;
   display: inline-block;
   /*background-color: yellow;*/
-  transform: scale(1) rotate(-2deg) skew(-20deg);
+  transform: scaleY(.8) rotate(-2deg) skew(-30deg);
 }
 
 .highlight > span {
   display: inherit;
-  transform: scale(1) rotate(2deg) skew(20deg);
+  transform: scaleY(1.2) rotate(2deg) skew(30deg);
 }
 
 /* typography */
