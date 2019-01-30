@@ -244,4 +244,10 @@ h2.section__title {
     margin: 53px 10% 0 0;
     float: left;
   }
+  .email .button--new {
+    width: auto;
+  }
+  .email input {
+    width: 215px;
+  }
 }
