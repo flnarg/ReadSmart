@@ -230,9 +230,12 @@ h2.section__title {
   .hero__image {
     display: none;
   }
+  .hero .email {
+    float: none;
+    margin: 0 auto;
+  }
   .hero .column {
     width: 100%;
-    padding: 0 2%
   }
   .feature__item {
     max-width: 100%;
