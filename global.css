@@ -74,13 +74,20 @@ h3 {
   font-weight: 900;
   position: relative;
   display: inline-block;
-  /*background-color: yellow;*/
-  transform: scaleY(.8) rotate(-2deg) skew(-30deg);
+  -webkit-transform: scaleY(.8) rotate(-2deg) skew(-30deg);
+  -moz-transform:    scaleY(.8) rotate(-2deg) skew(-30deg);
+  -ms-transform:     scaleY(.8) rotate(-2deg) skew(-30deg);
+  -o-transform:      scaleY(.8) rotate(-2deg) skew(-30deg);
+  transform:         scaleY(.8) rotate(-2deg) skew(-30deg);
 }
 
 .highlight > span {
   display: inherit;
-  transform: scaleY(1.2) rotate(2deg) skew(30deg);
+  -webkit-transform: scaleY(1.2) rotate(2deg) skew(30deg);
+  -moz-transform:    scaleY(1.2) rotate(2deg) skew(30deg);
+  -ms-transform:     scaleY(1.2) rotate(2deg) skew(30deg);
+  -o-transform:      scaleY(1.2) rotate(2deg) skew(30deg);
+  transform:         scaleY(1.2) rotate(2deg) skew(30deg);
 }
 
 /* typography */
