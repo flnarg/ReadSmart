@@ -72,6 +72,15 @@ h3 {
   background-color:#fcda6699;
   border-radius: 100px;
   font-weight: 900;
+  position: relative;
+  display: inline-block;
+  /*background-color: yellow;*/
+  transform: scale(1) rotate(-2deg) skew(-20deg);
+}
+
+.highlight > span {
+  display: inherit;
+  transform: scale(1) rotate(2deg) skew(20deg);
 }
 
 /* typography */
