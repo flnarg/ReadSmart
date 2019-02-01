@@ -78,6 +78,19 @@ nav {
   margin: 0 0 -10px 0;
 }
 
+.kindle_logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-right: 83px;
+}
+
+.kindle_logo > img.logo {
+  width: 300px;
+  margin-left: 0;
+}
+
 /* feature section */
 .how__it__works .section__title {
   margin-bottom: 70px
@@ -236,6 +249,9 @@ h2.section__title {
   }
   .hero .column {
     width: 100%;
+  }
+  .kindle_logo {
+    padding-right: 0;
   }
   .feature__item {
     max-width: 100%;
