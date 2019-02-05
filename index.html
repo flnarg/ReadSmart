@@ -60,12 +60,15 @@
           <h1 class="hero__title">Access your learnings the <span class="highlight"><span>smart way</span></span></h1>
           <p class="hero__description">Readsmart makes it simple to access and manage your ebooks’ highlights and notes.</p>
           <div class="email top-email">
-            <form id="get-early-access-form">
+            <a href="#footer" class="button--new buy" onclick="gtag('event', 'submit', {
+              'event_category': 'suscription_top',
+              });">Pre-order and save 50%</a>
+            <!-- <form id="get-early-access-form">
               <input type="email" name="email" placeholder="your@email.com"><button class="button--new buy" type="submit">Get Early Access</button>
             </form>
             <div class="email_success">
               <p><span class="highlight"><span>Thanks for joining Readsmart! Stay tuned 👀</span></span></p>
-            </div>
+            </div> -->
           </div>
           <div class="kindle_logo">
             <img class="logo" src="media/Amazon_Kindle_logo.png">
@@ -265,8 +268,21 @@
     <div class="buy">
       <div>
         <h2 class="section__title">Get the most of your highlights</h3>
-        <p>Be the first to join Readsmart. We’ll let you know when it's launched</p>
-        <div class="bottom-email">
+        <p>Get early access now and save 50% (billed yearly).</p> <p>We'll keep you posted about launch day.</p>
+        <div class="pricing">
+          <span class="dolar">$</span><span class="price">1.99</span><span class="mo"> /mo</span>
+          <span class="anually">Refundable</span>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="L3CVBQ7EUQKDN">
+            <button class="button--new buy" type="submit" alt="PayPal - The safer, easier way to pay online!" onclick="gtag('event', 'buy', {
+              'event_category': 'purchase',
+              });">Pre-order and save 50%</button>
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
+        </div>
+        <!-- <div class="bottom-email">
           <div class="email">
             <form id="get-early-access-form">
               <input type="email" name="email" placeholder="your@email.com"><button class="button--new buy" type="submit">Get Early Access</button>
@@ -275,7 +291,7 @@
           <div class="email_success">
             <p><span class="highlight"><span>Thanks for joining Readsmart! Stay tuned 👀.</span></span></p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="footer" id="footer"><a class="icons" href="https://icons8.com">Icon by Icons8</a> - Copyright © 2019</div>
