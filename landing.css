@@ -1,24 +1,33 @@
-/* nav specialized to landing page */
-.logo {
-  margin: 1rem 0 0 1rem;
+body {
+  overflow-x: hidden;
 }
 
-nav {
-  background-color: var(--bg-color);
+/* nav specialized to landing page */
+.logo {
+  text-align: left;
+  color: var(--organge);
+  font-size: 23px; 
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
 }
 
 /* hero section */
 .hero {
   text-align: center;
   background-color: var(--bg-color);
-  padding: 2rem 0 2rem 0;
-  overflow: hidden;
+  padding: 0 0 2rem 0;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 400px
 }
 
 .hero .inner {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto
+  margin: 0 auto;
+  z-index: 1;
+  /*position: relative;*/
 }
 
 .hero .column {
@@ -27,68 +36,122 @@ nav {
 }
 
 .hero .column img {
-  width: 100%;
-  float: left;
-  padding: 20px
 }
 
 .hero__title {
-  font-weight: 900;
+  font-weight: 700;
   color: var(--primary-color);
   margin-top: 70px;
-  margin-bottom: 40px;
+  font-size: 44px
 }
 
 .hero__description {
-  margin: -1rem auto 2rem auto;
+  width: 442px;
   text-align: left;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 21px;
   line-height: 1.69rem;
 }
 
-.hero__terminal {
-  width: 60%;
-  margin: -11rem auto 3rem auto;
-  text-align: left;
-  color: white;
-  padding: 0 1rem;
-  border-radius: 4px;
-  background-color: #232323;
-  min-height: 285px;
-  animation: fadeUp 2s;
-  box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
-}
-
-.hero__terminal pre {
-  white-space: pre-line;
-  padding-top: 1rem;
-}
 
 .bottom-line {
-  transform: scale(1, -1);
-  margin: -10px 0 0 0;
+  width: 120%;
+  height: 200px;
+  background: #f9f0e1;
+  transform: rotate(4deg);
+  margin: -54px 0 0 -20px;
+  position: absolute;
+  bottom: -87px;
+  z-index: 0;
 }
 
 .top-line {
   margin: 0 0 -10px 0;
 }
 
-.kindle_logo {
-  width: 100%;
+.compatible {
+  width: 150px;
   margin: 34px 0 0 0;
   float: left;
+  clear: both;
 }
 
-.kindle_logo > img.logo {
-  width: 300px;
-  margin-left: 0;
-  padding:0px;
+.compatible img {
+  width: 100%
+}
+
+.hero__image {
+  position: absolute;
+  right: 0px;
+  width: 710px !important;
+  top: 115px;
+  z-index: 1;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+/* why */
+
+.why {
+  max-width: 800px;
+  margin: 0 auto 200px;
+}
+
+.why svg {
+  width: 50px;
+  margin: 0 auto 35px;
+  display: block;
+  fill: var(--organge)
+}
+
+.why p {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  line-height: 24px;
 }
 
 /* feature section */
-.how__it__works .section__title {
+.benefits .section__title {
   margin-bottom: 70px
+}
+
+.how {
+  flex-direction: column;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.how .section__title {
+  margin-bottom: 70px;
+  text-align: left;
+}
+
+.how .feature__item {
+  margin: 0px 0 35px 0;
+  width: 100%;
+  max-width: none;
+}
+
+.how .feature__item .section__title {
+  margin: 0px
+}
+
+.how .feature__item .info {
+  float: left;
+  width: 50%;
+}
+
+.how .feature__item svg {
+  width: 30px;
+  margin: 3px 25px 0 0;
+  display: block;
+  float: left;
+  fill: var(--organge)
 }
 
 h2.section__title {
@@ -112,8 +175,8 @@ h2.section__title {
 }
 
 .feature__item svg {
-  width: 40%;
-  margin: 0 auto;
+  width: 67px;
+  margin: 0 0 0 -5px;
   display: block;
 }
 
@@ -185,7 +248,8 @@ h2.section__title {
   margin: 0 auto
 }
 .email {
-  margin: 30px 0 0 0;
+  margin: 30px 0 60px 0;
+  float: left;
 }
 .email input {
   font-size: 1rem;
@@ -208,6 +272,12 @@ h2.section__title {
   cursor: pointer !important;
 }
 
+.button--new svg {
+  width: 20px;
+  fill: #fff;
+  vertical-align: middle;
+}
+
 .email.top-email .button--new {
   border-radius: 4px;
   margin: 0 auto;
@@ -221,15 +291,22 @@ h2.section__title {
 
 /* footer */
 .footer {
-  background: #fff;
+  background: var(--bg-color);
   overflow: hidden;
   height: 50px;
   width: 100%;
   color: #000;
   text-align: center;
   margin: 100px 0 0 0;
-  font-size: 13px
+  font-size: 13px;
+  padding: 0px
 }
+
+.footer svg {
+  width: 30px;
+  margin: 12px 0
+}
+
 .footer .icons {
   color: #C7C7C3;
 }
@@ -270,9 +347,372 @@ h2.section__title {
   cursor: pointer;
 }
 
+/* Social */
+
+.social {
+  width: 100%;
+  height: 265px;
+  clear: both;
+  overflow: scroll;
+  margin: 100px 0 50px 0
+}
+
+.social ul {
+  float: left;
+  height: 250px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 2650px
+}
+
+.social ul li {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 0px 20px;
+  padding: 0px;
+  border: 1px solid #000;
+}
+
+.social ul li .tw {
+  background: var(--bg-color);
+  width: 230px;
+  height: 230px;
+  margin: 10px;
+  padding: 10px
+}
+
+.social ul li .tw .user {
+  width: 100%;
+  float: left;
+}
+
+.social ul li .tw .user .pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  float: left;
+}
+
+.social ul li .tw .user .twitter_logo {
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+
+.social ul li .tw .user a {
+  font-size: 14px;
+  font-weight: bold;
+  height: 35px;
+  display: block;
+  padding: 8px 0;
+  float: left;
+  margin: 0 0 0 10px
+}
+
+.social ul li .tw .text {
+  margin: 20px 0 0 0;
+  display: block;
+  float: left;
+}
+
+.new_pricing {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 0 0;
+}
+
+.new_pricing .col {
+  width: 280px;
+  position: relative;
+}
+
+.new_pricing .col .coupon {
+  width: 170px;
+  height: 38px;
+  border: 1px dotted #000;
+  position: absolute;
+  top: -36px;
+  left: 50px
+}
+
+.new_pricing .col .coupon .title {
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-weight: 400;
+}
+.new_pricing .col .coupon .txt {
+  color: #fe775d;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  left: 0;
+}
+
+.new_pricing .col .price_monthly {
+  width: 280px;
+  height: 300px;
+  float: left;
+  margin: 5% 0;
+  border: 1px solid #000;
+}
+
+.new_pricing .col .price_monthly .price_box {
+  width: 260px;
+  height: 280px;
+  float: left;
+  margin: 9px;
+  color: #000;
+  padding: 10px
+}
+
+
+.new_pricing .col .price_yeraly {
+  width: 280px;
+  height: 300px;
+  float: left;
+  border: 1px solid #000;
+  margin: 5% 0
+}
+
+.new_pricing .col .price_yeraly .price_box {
+  width: 260px;
+  height: 280px;
+  float: left;
+  background: var(--organge);
+  margin: 9px;
+  color: #fff;
+  padding: 10px
+}
+
+.new_pricing .col .price_yeraly .button--new {
+  background: #fff;
+  color: var(--organge);
+}
+
+.new_pricing .col .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.new_pricing .col .price {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 25px 0
+}
+
+.new_pricing .col .price span {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.new_pricing .col .info {
+  font-size: 14px;
+}
+
+.new_pricing .quote {
+  width: 280px;
+  padding: 20px;
+  text-align: left;
+}
+
+.new_pricing .quote span {
+  font-family: 'Merriweather', serif;;
+  font-size: 24px;
+  text-align: left;
+}
+
+.new_pricing .quote .name {
+  font-family: 'Lato', sans-serif;;
+  font-size: 20px;
+  text-align: left;
+  display: block;
+  margin: 20px 0 0 0
+}
+
+.new_pricing .quote .company {
+  font-family: 'Lato', sans-serif;;
+  font-size: 15px;
+  text-align: left;
+  display: block;
+}
+
+.features {
+  width: calc((100% - 840px)/2 + 560px);
+  float: right;
+  margin: 30px 0 0 0;
+}
+
+.features .title {
+  font-weight: bold
+}
+
+.features table {
+  margin: 30px 0 0 0
+}
+
+.features table, .features tr, .features td {
+  background: #fff !important;
+  border: 0px;
+  font-weight: 400 !important;
+  text-align: left;
+}
+
+.features tr {
+  border-top: 1px solid #ccc;
+}
+
+.features svg {
+  width: 20px;
+  height: 20px
+}
+
+.cta-convinced {
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 50px 0;
+  position: relative;
+}
+
+.cta-convinced span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.cta-convinced .buy {
+  margin: 15px auto;
+  float: none;
+  display: block;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000
+}
+
+.cta-convinced svg {
+  fill: #000;
+}
+
+.cta-convinced .line { 
+  width: 140px;
+  border-bottom: 1px solid #000;
+  position: absolute;
+}
+
+.cta-convinced .line.left {
+  top: 54px;
+  left: 50%;
+  margin: 0 0 0 -304px;
+}
+
+.cta-convinced .line.right {
+  top: 54px;
+  right: 50%;
+  margin: 0 -304px 0 0;
+}
+
+/* */
+.half {
+  float: left;
+  width: 100%;
+  padding: 0 1em;
+}
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #fff;
+  line-height: 2;
+  cursor: pointer;
+  color: #000;
+  border-bottom: 1px solid;
+}
+.blue label {
+  background: #2980b9;
+}
+.tab-content {
+  color: #000;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.tab-content a {
+  color: var(--organge);
+}
+.blue .tab-content {
+  background: #3498db;
+}
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+.tab input[type=radio] + label::after {
+  content: "\25BC";
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+.tab input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+/* */
+
+.books-mobile {
+  display: none;
+}
+
+
 @media (max-width: 750px) {
   p, h1, h2, h3, h4 {
     text-align: center !important;
+    width: 100% !important;
+  }
+  .wrapper {
+    margin: 0 auto;
+    width: 80%;
   }
   .button--new, .button--new:hover {
     float: none
@@ -293,7 +733,8 @@ h2.section__title {
   }
   .feature__item {
     max-width: 100%;
-    margin: 0;
+    width: 100%;
+    margin: 20px 0;
   }
   .share .column {
     width: 100%;
@@ -314,5 +755,67 @@ h2.section__title {
   }
   .email input {
     width: 215px;
+  }
+  .compatible {
+    float: none;
+    margin: 30px auto 0
+  }
+  .feature__item svg, .how .feature__item svg {
+    float: none;
+    margin: 0 auto;
+  }
+  .how .feature__item .info {
+    width: 100%;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .new_pricing {
+    flex-direction: column;
+  }
+
+  .new_pricing .col {
+    width: 100%;
+  }
+
+  .new_pricing .col:nth-child(2) {
+    order: 2
+  }
+
+  .new_pricing .col .coupon {
+    left: 50%;
+    margin: 0px 0 0 -85px;
+  }
+
+  .new_pricing .col .price_monthly, .new_pricing .col .price_yeraly {
+    margin: 20px auto;
+    float: none;
+  }
+
+  .features {
+    width: 100%
+  }
+
+  .faqs {
+    width: 100%
+  }
+
+  .faqs .half {
+    padding: 0px
+  }
+
+  .faqs .half p {
+    text-align: left !important
+  }
+
+  .books-mobile {
+    display: block;
+    position: absolute;
+    height: 200px;
+    bottom: -148px;
+    z-index: 2;
+    left: 0;
   }
 }

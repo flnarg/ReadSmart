@@ -1,6 +1,6 @@
 /* css variables*/
 :root {
-  --primary-color: #432E30;
+  --primary-color: #000000;
   --primary-color-light: #8E7474;
   --accent-color: #FE6A6B;
   --accent-color-light: #FFE4E4;
@@ -11,6 +11,8 @@
   --dark-gray-color: #444D56; 
   --bg-color: #f9f0e2;
   --code-bg-color: #F0E8E8;
+
+  --organge: #fc7862;
 }
 
 /* normalized */
@@ -22,8 +24,8 @@ html, body {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: -0.1px;
   font-style: normal;
   font-weight: normal;
@@ -42,12 +44,12 @@ hr {
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
-  color: #000 !important;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h1 {
@@ -57,13 +59,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 38px;
   line-height: 3rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
   line-height: 2.25rem;
+  font-weight: 700
 }
 
 /* global components */
@@ -212,19 +216,15 @@ h3 {
   display: inline-block;
   border: 0;
   color: white;
-  background-color: #3CB371;
-  border-bottom-color: #4a7e57;
-  border-left: 1px solid #3CB371;
-  border-top: 1px solid #3CB371;
-  border-right: 1px solid #3CB371;
+  background-color: var(--organge);
   float: left;
 }
 
 .button--new.buy {
   float: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4rem;
-  padding: 10px 15px 10px;
+  padding: 10px 35px 10px;
   margin: 30px auto 0;
 }
 
@@ -371,6 +371,7 @@ table td:first-child {
 .wrapper {
   margin: 0 auto;
   width: 70%;
+  overflow: hidden;
 }
 
 .footer {
