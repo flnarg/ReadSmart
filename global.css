@@ -220,11 +220,18 @@ h3 {
 }
 
 .button--new.buy {
+  font-weight: bold;
   float: none;
   font-size: 1.1rem;
   line-height: 1.4rem;
   padding: 10px 35px 10px;
   margin: 30px auto 0;
+  border: 1px solid var(--organge);
+}
+
+.button--new.buy:hover {
+  background: #fc7862b3;
+  border: 1px solid var(--organge);
 }
 
 /* links */

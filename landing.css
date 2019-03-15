@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 /* nav specialized to landing page */
 .logo {
   text-align: left;
@@ -90,6 +94,8 @@ body {
   margin: 34px 0 0 0;
   float: left;
   clear: both;
+  z-index: 9;
+  position: relative;
 }
 
 .compatible img {
@@ -112,7 +118,7 @@ body {
 
 .why {
   max-width: 800px;
-  margin: 0 auto 100px;
+  margin: 0 auto 0px;
 }
 
 .why svg {
@@ -155,6 +161,10 @@ body {
   margin: 0px 0 35px 0;
   width: 100%;
   max-width: none;
+}
+
+.feature__item a {
+  text-decoration: underline;
 }
 
 .how .feature__item .section__title {
@@ -533,6 +543,10 @@ h2.section__title {
   color: var(--organge);
 }
 
+.new_pricing .col .price_yeraly .button--new:hover {
+  background: #ffffffed;
+}
+
 .new_pricing .col .title {
   font-size: 16px;
   font-weight: bold;
@@ -585,7 +599,7 @@ h2.section__title {
 .features {
   width: calc((100% - 840px)/2 + 560px);
   float: right;
-  margin: 30px 0 0 0;
+  margin: 100px 0 0 0;
 }
 
 .features .title {
@@ -782,6 +796,9 @@ h2.section__title {
   .hero__image {
     display: none;
   }
+  .hero {
+    margin-bottom: 300px;
+  }
   .hero .email {
     float: none;
     margin: 0 auto;
@@ -880,5 +897,21 @@ h2.section__title {
     bottom: -148px;
     z-index: 2;
     left: 0;
+  }
+
+  .why {
+    margin: 0px
+  }
+
+  .cta-convinced {
+    margin: 100px 0;
+  }
+
+  .top-menu {
+    display: none;
+  }
+
+  .compatible {
+    visibility: hidden;
   }
 }
