@@ -26,6 +26,11 @@ body {
   margin-bottom: 400px
 }
 
+.hero-pricing {
+  margin: 0px !important;
+  background: #fff;
+}
+
 .hero .inner {
   width: 100%;
   max-width: 1000px;
@@ -504,7 +509,7 @@ h2.section__title {
 
 .new_pricing .col .price_monthly {
   width: 280px;
-  height: 300px;
+  height: 312px;
   float: left;
   margin: 5% 0;
   border: 1px solid #000;
@@ -512,7 +517,7 @@ h2.section__title {
 
 .new_pricing .col .price_monthly .price_box {
   width: 260px;
-  height: 280px;
+  height: 292px;
   float: left;
   margin: 9px;
   color: #000;
@@ -522,7 +527,7 @@ h2.section__title {
 
 .new_pricing .col .price_yeraly {
   width: 280px;
-  height: 300px;
+  height: 312px;
   float: left;
   border: 1px solid #000;
   margin: 5% 0
@@ -530,7 +535,7 @@ h2.section__title {
 
 .new_pricing .col .price_yeraly .price_box {
   width: 260px;
-  height: 280px;
+  height: 292px;
   float: left;
   background: var(--organge);
   margin: 9px;
