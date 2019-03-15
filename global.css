@@ -120,8 +120,7 @@ h3 {
 
 .tab {
   display: inline-block;
-  padding: 0.3rem 0.5rem;
-  font-weight: 200;
+  padding: 0.3rem 0.5rem;;
   cursor: pointer;
 }
 

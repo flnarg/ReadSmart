@@ -38,6 +38,22 @@ body {
 .hero .column img {
 }
 
+.hero .top-menu {
+  list-style: none;
+  margin: -55px 0 0 0;
+  padding: 0px;
+  float: right;
+}
+
+.hero .top-menu li {
+  float: left;
+  margin: 0px 10px;
+}
+
+.hero .top-menu li a {
+  
+}
+
 .hero__title {
   font-weight: 700;
   color: var(--primary-color);
@@ -96,7 +112,7 @@ body {
 
 .why {
   max-width: 800px;
-  margin: 0 auto 200px;
+  margin: 0 auto 100px;
 }
 
 .why svg {
@@ -115,6 +131,10 @@ body {
 }
 
 /* feature section */
+.benefits {
+  padding: 50px 0 0 0;
+}
+
 .benefits .section__title {
   margin-bottom: 70px
 }
@@ -270,12 +290,19 @@ h2.section__title {
   border-radius: 0 4px 4px 0;
   outline: none;
   cursor: pointer !important;
+  font-weight: 700;
+  border: 1px solid var(--organge);
 }
 
 .button--new svg {
   width: 20px;
   fill: #fff;
-  vertical-align: middle;
+  vertical-align: bottom
+}
+
+.email .button--new:hover {
+  background: #fc7862b3;
+  border: 1px solid var(--organge);
 }
 
 .email.top-email .button--new {
@@ -309,6 +336,19 @@ h2.section__title {
 
 .footer .icons {
   color: #C7C7C3;
+}
+
+.footer ul {
+  margin: 18px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  list-style: none;
+  display: block;
+  margin: 0 10px;
 }
 
 .pricing {
@@ -568,8 +608,14 @@ h2.section__title {
 }
 
 .features svg {
-  width: 20px;
-  height: 20px
+  width: 23px;
+  height: 23px;
+}
+
+.features .soon {
+  font-size: 13px;
+  color: #6C04D0;
+  font-weight: 700;
 }
 
 .cta-convinced {
@@ -616,6 +662,15 @@ h2.section__title {
   top: 54px;
   right: 50%;
   margin: 0 -304px 0 0;
+}
+
+.cta-convinced a:hover {
+  color: var(--organge);
+  border: 1px solid var(--organge);
+}
+
+.cta-convinced a:hover svg {
+  fill: var(--organge);
 }
 
 /* */
@@ -675,7 +730,7 @@ h2.section__title {
 .tab label::after {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -4px;
   display: block;
   width: 3em;
   height: 3em;
@@ -702,6 +757,13 @@ h2.section__title {
 
 .books-mobile {
   display: none;
+}
+
+.badget {
+  background: #6C04D0;
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 15px;
 }
 
 
@@ -749,6 +811,7 @@ h2.section__title {
   .email .button--new {
     width: auto;
     float: none !important;
+    font-weight: 700 !important
   }
   .hero .column img {
     float: none !important;
