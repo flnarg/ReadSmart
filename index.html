@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8">
-      <meta name="description" content="Readsmart helps you organize, process and retain your highlights and notes for later reference.">
+      <meta name="description" content="Readsmart organizes your highlights and notes to boost your learning and creativity.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Readsmart</title>
       <meta name="pinterest-rich-pin" content="false" />
@@ -11,13 +11,13 @@
       <meta name="twitter:site" content="@readsmart3">
       <meta name="twitter:creator" content="@readsmart3">
       <meta name="twitter:title" content="Build your knowledge base the smart way">
-      <meta name="twitter:description" content="Readsmart helps you organize, process and retain your highlights and notes for later reference.">
-      <meta name="twitter:image" content="https://readsmart.co/media/hero.png">
+      <meta name="twitter:description" content="Readsmart organizes your highlights and notes to boost your learning and creativity.">
+      <meta name="twitter:image" content="https://readsmart.co/media/cover-image.jpg">
       <meta property="og:title" content="Build your knowledge base the smart way" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://readsmart.co/" />
-      <meta property="og:image" content="https://readsmart.co/media/hero.png" />
-      <meta property="og:description" content="Readsmart helps you organize, process and retain your highlights and notes for later reference." />
+      <meta property="og:image" content="https://readsmart.co/media/cover-image.png" />
+      <meta property="og:description" content="Readsmart organizes your highlights and notes to boost your learning and creativity." />
       <link rel="icon" href="media/icon.png" type="image/png">
       <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700, 900|Lato:400, 700" rel="stylesheet">
       <link rel="stylesheet" href="global.css">
@@ -88,7 +88,7 @@
           <img src="media/books.png">
         </div>
       </div>
-      <img class="books-mobile" src="media/books-mobile.png">
+      <div  class="books-mobile"></div> 
       <div class="bottom-line"></div>
     </div>
     
@@ -470,12 +470,14 @@
     </script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0014d8be-add7-440f-bd6d-80f10d1bc937";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <script>
-      const code = window.location.search.split('code=')[1].split('&')[0];
-      const specialCodes = ['PH-FRIENDS', 'IH-FRIENDS'];
-      if (specialCodes.indexOf(code) != -1) {
-        document.querySelector('.coupon .txt').innerText = code;
-        document.querySelector('.price_yeraly .price').innerHTML = '$3.99 <span>/ mo</span>';
-        document.querySelector('.price_yeraly .button--new').innerText = 'Redeem 35% OFF';
+      if (window.location.search) {
+        const code = window.location.search.split('code=')[1].split('&')[0];
+        const specialCodes = ['PH-FRIENDS', 'IH-FRIENDS'];
+        if (specialCodes.indexOf(code) != -1) {
+          document.querySelector('.coupon .txt').innerText = code;
+          document.querySelector('.price_yeraly .price').innerHTML = '$3.99 <span>/ mo</span>';
+          document.querySelector('.price_yeraly .button--new').innerText = 'Redeem 35% OFF';
+        }
       }
     </script>
   </body>

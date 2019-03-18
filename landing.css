@@ -409,7 +409,8 @@ h2.section__title {
   height: 265px;
   clear: both;
   overflow: scroll;
-  margin: 100px 0 50px 0
+  margin: 100px 0 50px 0;
+  display: none;
 }
 
 .social ul {
@@ -658,7 +659,16 @@ h2.section__title {
   width: 250px;
   background-color: #fff;
   border: 1px solid #000;
-  color: #000
+  color: #000;
+  font-weight: 400
+}
+
+.cta-convinced .buy:hover {
+  color: #fff;
+}
+
+.cta-convinced .buy:hover svg {
+  fill: #fff;
 }
 
 .cta-convinced svg {
@@ -899,9 +909,16 @@ h2.section__title {
     display: block;
     position: absolute;
     height: 200px;
+    width: 100%;
     bottom: -148px;
     z-index: 2;
     left: 0;
+    background-image: url(media/books-mobile.png);
+    background-size: cover;
+  }
+
+  .bottom-line {
+    display: none;
   }
 
   .why {
@@ -918,5 +935,9 @@ h2.section__title {
 
   .compatible {
     visibility: hidden;
+  }
+
+  .button--new.buy {
+    font-size: 1rem;
   }
 }
