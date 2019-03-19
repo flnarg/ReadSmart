@@ -463,17 +463,13 @@
           </g>
           </svg> -->
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-    </script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0014d8be-add7-440f-bd6d-80f10d1bc937";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <script>
       if (window.location.search) {
         const code = window.location.search.split('code=')[1].split('&')[0];
         const specialCodes = ['PH-FRIENDS', 'IH-FRIENDS'];
         if (specialCodes.indexOf(code) != -1) {
+          document.cookie = 'discountCode' + '=' + specialCodes[specialCodes.indexOf(code)]  + "; path=*.readsmart.co";
           document.querySelector('.coupon .txt').innerText = code;
           document.querySelector('.price_yeraly .price').innerHTML = '$3.99 <span>/ mo</span>';
           document.querySelector('.price_yeraly .button--new').innerText = 'Redeem 35% OFF';
