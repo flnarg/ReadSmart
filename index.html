@@ -469,7 +469,7 @@
         const code = window.location.search.split('code=')[1].split('&')[0];
         const specialCodes = ['PH-FRIENDS', 'IH-FRIENDS'];
         if (specialCodes.indexOf(code) != -1) {
-          document.cookie = 'discountCode' + '=' + specialCodes[specialCodes.indexOf(code)]  + "; path=*.readsmart.co";
+          document.cookie = 'discountCode' + '=' + specialCodes[specialCodes.indexOf(code)]  + "; domain=.readsmart.co; path=/";
           document.querySelector('.coupon .txt').innerText = code;
           document.querySelector('.price_yeraly .price').innerHTML = '$3.99 <span>/ mo</span>';
           document.querySelector('.price_yeraly .button--new').innerText = 'Redeem 35% OFF';
