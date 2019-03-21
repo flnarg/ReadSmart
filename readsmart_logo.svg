@@ -1,5 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="154" height="25" viewBox="0 0 154 25">
-  <text fill="#FC6D55" fill-rule="evenodd" stroke="#000" stroke-opacity=".1" font-family="Merriweather-Bold, Merriweather" font-size="28" font-weight="bold" letter-spacing=".133" transform="translate(-35 -17)">
-    <tspan x="35" y="41">Readsmart</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="25" viewBox="0 0 152 25">
+  <defs>
+    <text id="readsmart_logo-b" font-family="Merriweather-Bold, Merriweather" font-size="28" font-weight="bold">
+      <tspan x="0" y="28">Readsmart</tspan>
+    </text>
+    <filter id="readsmart_logo-a" width="101.3%" height="105.6%" x="-.3%" y="-1.4%" filterUnits="objectBoundingBox">
+      <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+  <g fill="#FC6D55" fill-rule="evenodd" transform="translate(-1 -5)">
+    <use filter="url(#readsmart_logo-a)" xlink:href="#readsmart_logo-b"/>
+    <use xlink:href="#readsmart_logo-b"/>
+    <use xlink:href="#readsmart_logo-b"/>
+  </g>
 </svg>
