@@ -95,7 +95,7 @@
       <div class="why">
         <div class="gif_window">
           <img src="media/browser-top-1.png" class="top">
-          <video autoplay onclick="this.play()" poster="media/video-cover.png" preload="auto" loop>
+          <video autoplay onclick="this.play()" poster="media/video-cover.png" preload="auto" onended="gtag('event', 'submit', {'video': 'start'});" onplay="gtag('event', 'submit', {'video': 'end'});">
             <source src="media/movie.mp4" type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
           </video>
@@ -454,6 +454,18 @@
 
     <div class="footer" id="footer">
       <ul>
+        <li>
+          <a href="https://medium.com/read-smart" target="_blank"><img src="media/medium-logo.png"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/getreadsmart" target="_blank"><img src="media/twitter-logo.png"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/readsmartco" target="_blank"><img src="media/facebook.png"></a>
+        </li>
+        <li>
+          |
+        </li>
         <li>
           <a href="mailto:hi@readsmart.co">Contact Us</a>
         </li>
