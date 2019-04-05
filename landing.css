@@ -178,7 +178,7 @@ body {
 
 .how .feature__item .info {
   float: left;
-  width: 50%;
+  width: 70%;
 }
 
 .how .feature__item svg {
@@ -795,6 +795,30 @@ h2.section__title {
   border-radius: 15px;
 }
 
+
+/* Windows gif */
+
+.gif_window {
+  margin: 0 0 60px 0;
+  float: left;
+}
+
+.gif_window video {
+  width: 100%;
+  padding: 0px;
+  box-shadow: #b1adad -1px 6px 11px 1px;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+}
+
+.gif_window img {
+  width: 100%;
+  padding: 0px;
+  box-shadow: #b1adad -1px 6px 11px 1px;
+  margin: 0px;
+  float: left;
+}
 
 @media (max-width: 750px) {
   p, h1, h2, h3, h4 {
