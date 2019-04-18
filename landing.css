@@ -40,7 +40,7 @@ body {
 }
 
 .hero .column {
-  width: 50%;
+  width: 70%;
   float: left;
 }
 
@@ -197,10 +197,12 @@ h2.section__title {
 .feature {
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .feature__item {
-  max-width: calc(33% - 20px);
+  width: calc(50% - 20px);
   margin: 0 20px 70px 0;
 }
 
@@ -481,8 +483,12 @@ h2.section__title {
 
 .new_pricing {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 100px 0 0 0;
+}
+
+.new_pricing .col:first-child {
+  margin: 0 40px 0 0;
 }
 
 .new_pricing .col {
@@ -609,9 +615,8 @@ h2.section__title {
 }
 
 .features {
-  width: calc((100% - 840px)/2 + 560px);
-  float: right;
-  margin: 100px 0 0 0;
+  width: 580px;
+  margin: 100px auto 0 auto;
 }
 
 .features .title {
