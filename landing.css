@@ -40,7 +40,7 @@ body {
 }
 
 .hero .column {
-  width: 50%;
+  width: 70%;
   float: left;
 }
 
@@ -67,7 +67,7 @@ body {
   font-weight: 700;
   color: var(--primary-color);
   margin-top: 70px;
-  font-size: 44px
+  font-size: 36px
 }
 
 .hero__description {
@@ -143,7 +143,7 @@ body {
 
 /* feature section */
 .benefits {
-  padding: 50px 0 0 0;
+  padding: 0;
 }
 
 .benefits .section__title {
@@ -197,10 +197,12 @@ h2.section__title {
 .feature {
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .feature__item {
-  max-width: calc(33% - 20px);
+  width: calc(50% - 20px);
   margin: 0 20px 70px 0;
 }
 
@@ -481,8 +483,12 @@ h2.section__title {
 
 .new_pricing {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 100px 0 0 0;
+}
+
+.new_pricing .col:first-child {
+  margin: 0 40px 0 0;
 }
 
 .new_pricing .col {
@@ -492,7 +498,7 @@ h2.section__title {
 
 .new_pricing .col .coupon {
   width: 170px;
-  height: 38px;
+  height: 45px;
   border: 1px dotted #000;
   position: absolute;
   top: -36px;
@@ -609,9 +615,8 @@ h2.section__title {
 }
 
 .features {
-  width: calc((100% - 840px)/2 + 560px);
-  float: right;
-  margin: 100px 0 0 0;
+  width: 580px;
+  margin: 100px auto 0 auto;
 }
 
 .features .title {
