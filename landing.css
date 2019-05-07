@@ -18,12 +18,10 @@ body {
 /* hero section */
 .hero {
   text-align: center;
-  background-color: var(--bg-color);
   padding: 0 0 2rem 0;
   position: relative;
   float: left;
   width: 100%;
-  margin-bottom: 400px
 }
 
 .hero-pricing {
@@ -40,7 +38,7 @@ body {
 }
 
 .hero .column {
-  width: 70%;
+  width: 100%;
   float: left;
 }
 
@@ -67,7 +65,9 @@ body {
   font-weight: 700;
   color: var(--primary-color);
   margin-top: 70px;
-  font-size: 36px
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
 }
 
 .hero__description {
@@ -76,6 +76,8 @@ body {
   color: #000;
   font-size: 21px;
   line-height: 1.69rem;
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -122,7 +124,8 @@ body {
 /* why */
 
 .why {
-  max-width: 800px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto 0px;
 }
 
@@ -285,8 +288,7 @@ h2.section__title {
   margin: 0 auto
 }
 .email {
-  margin: 30px 0 60px 0;
-  float: left;
+  margin: 30px auto 60px auto;
 }
 .email input {
   font-size: 1rem;
@@ -325,7 +327,6 @@ h2.section__title {
 .email.top-email .button--new {
   border-radius: 4px;
   margin: 0 auto;
-  float: left; 
 }
 
 .email_success {
@@ -335,7 +336,6 @@ h2.section__title {
 
 /* footer */
 .footer {
-  background: var(--bg-color);
   overflow: hidden;
   height: 50px;
   width: 100%;
@@ -809,6 +809,14 @@ h2.section__title {
 
 /* Windows gif */
 
+.iphonex {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  display: none;
+}
+
 .gif_window {
   margin: 0 0 60px 0;
   float: left;
@@ -816,8 +824,10 @@ h2.section__title {
 
 .gif_window video {
   width: 100%;
+  height: 549px;
   padding: 0px;
   box-shadow: #b1adad -1px 6px 11px 1px;
+  border: 0px;
   margin: 0px;
   float: left;
   cursor: pointer;
@@ -832,6 +842,14 @@ h2.section__title {
 }
 
 @media (max-width: 750px) {
+  .gif_window {
+    display: none;
+  }
+
+  .iphonex {
+    display: block;
+  }
+
   p, h1, h2, h3, h4 {
     text-align: center !important;
     width: 100% !important;
@@ -847,7 +865,7 @@ h2.section__title {
     display: none;
   }
   .hero {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
   }
   .hero .email {
     float: none;
@@ -911,7 +929,8 @@ h2.section__title {
   }
 
   .new_pricing .col:nth-child(2) {
-    order: 2
+    order: 2;
+    margin: 27px 0 0 0;
   }
 
   .new_pricing .col .coupon {
