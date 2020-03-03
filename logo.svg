@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="199" height="199" x=".5" y=".5" fill="#F9F0E3" stroke="#979797" stroke-opacity=".1"/>
+    <text fill="#FC6D55" font-family="Merriweather-Bold, Merriweather" font-size="28" font-weight="bold" letter-spacing=".1">
+      <tspan x="24" y="109">Readsmar</tspan> <tspan x="165.696" y="109">t</tspan>
+    </text>
+  </g>
+</svg>
